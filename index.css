@@ -1,0 +1,209 @@
+*{
+    font-style: italic;
+}
+body{
+    background-color: rgb(113, 34, 34);
+}
+#header-nav{
+    background-color:yellow;
+    border-radius: 0;
+    border: 0;
+    height: auto;
+}
+#logo-img{
+    background:url('log.png') no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 10px 15px;
+}
+.navbar-brand{
+    padding-top:30px;
+}
+.navbar-brand a:hover, .navbar-brand a{
+    text-decoration: none;
+}
+.navbar-brand h1{
+    text-transform: capitalize;
+    color: #8d3d5b;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: #8d3d5b 1px 0px 10px;
+}
+.navbar-brand p{
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: black 1px 0px 10px;
+}
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a{
+    text-decoration: none;
+    text-align:center;
+    color:#8d3d5b; 
+    text-transform: capitalize;
+    text-shadow: #8d3d5b 1px 0px 10px;
+    border-radius:100px;
+}
+#nav-list a:hover{
+    color:white;
+    text-shadow: gray 1px 0px 10px;
+    background-color:#8d3d5b;
+}
+#nav-list a span{
+    padding: 20px;
+    font-size: 1.8em;
+}
+#phone{
+    margin-top: 10px;
+}
+#phone a{
+    text-align:right;
+    padding-top:8px ;
+   
+}
+#phone div{
+    color: green;
+    text-align: right;
+    font-weight: 700;
+    padding-right: 17px;
+}
+.navbar-light .navbar-toggler:focus{
+    color: rgb(120, 9, 9);
+}
+.navbar-light .navbar-toggler{
+    border:1px solid rgb(120, 9, 9);
+    background-color:white;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28120, 9, 9, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-item a{
+    font-size: 1.2em;
+}
+.call-btn{
+    margin-top:20px;
+    
+}
+.btn{
+    color:rgb(120, 9, 9);
+    background-color:yellow;
+    width: 70%;
+    font-size:30px;
+    border: 3px solid white;
+}
+
+span.bi.bi-telephone-forward{
+    font-size: 30px;
+}
+.call-btn div{
+    color: white;
+    font-size:20px;
+}
+@media (min-width: 1200px){
+    .jumbotron{
+        margin-top:25px;
+        background: url('1200.png') no-repeat;
+        background-size:cover;
+        background-position: center;
+        height: 600px;
+        border:2px solid #3f0c1f;
+        margin-bottom:30px;
+        box-shadow: 0 0 50px #3f0c1f;
+    }
+}
+@media (min-width: 992px) and (max-width:1198px){
+.jumbotron{
+    margin-top:25px;
+    background: url('768.png') no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 500px;
+    border:2px solid #3f0c1f;
+    margin-bottom:30px;
+    box-shadow: 0 0 50px #3f0c1f;
+}
+}
+.img{
+        margin-top:15px;
+        border:2px solid #3f0c1f;
+        box-shadow: 0 0 50px #3f0c1f;
+}
+#menu-tiles, #specials-tiles, #map-tiles{
+    margin-top: 10px;
+    height: 250px;
+    width:100%;
+    margin-bottom:15px;
+    position: relative;
+    border:2px solid #3f0c1f;
+    overflow:hidden;
+    border-radius: 8px;
+}
+#menu-tiles:hover, #specials-tiles:hover, #map-tiles:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tiles{
+    background: url('spec.png') no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#specials-tiles{
+    background: url('menu.png') no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#menu-tiles span, #specials-tiles span, #map-tiles span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color:#000;
+    color: #fff;
+    width: 100%;
+    opacity: .8;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+@media (max-width: 575px){
+    #menu-tiles, #specials-tiles, #map-tiles{
+        width: 320px;
+        margin: 20px auto 15px;
+    }
+}
+.panel-footer{
+    margin-top: 25px;
+    background-color: #222;
+    padding-top:30px;
+    padding-bottom: 10px;
+    color: white;
+}
+.panel-footer div.row{
+    margin-bottom:15px;
+}
+#adress, #hours{
+    line-height:2;
+}
+#hours > span, #adress > span{
+    font-size: 1.5em;
+}
+#adress p{
+    font-size: .9em;
+    line-height:1.8;
+    color: #4ea71a;
+}
+#testo p:nth-child(2){
+    margin-top: 20px;
+}
+#testo{
+    padding-top: 15px;
+    font-size: 1.1em;
+}
+hr{
+    border:3px solid white;
+    color: white;
+}
