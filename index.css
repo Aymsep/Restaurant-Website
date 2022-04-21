@@ -214,6 +214,7 @@ hr{
     overflow: hidden;
     border:2px solid #3f0c1f;
     margin: 10px auto 15px;
+    transition: all .2s ease-in-out; 
 }
 .category-tile span{
     position: absolute;
@@ -230,6 +231,7 @@ hr{
 }
 .category-tile:hover{
     box-shadow: 0 1px 5px 1px #cccccc;
+    transform: scale(1.1);
 }
 #menutitle{
     margin-top:20px;
@@ -237,4 +239,60 @@ hr{
     margin-bottom:25px;
     font-size:1.8em;
     font-weight:bold;
+}
+#menu-cate-title{
+    margin-top:20px;
+    color: #fff;
+    margin-bottom:25px;
+    font-size:1.8em;
+    font-weight:bold;
+}
+.menu-item-tile{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.menu-item-tile hr{
+    width: 80%;
+    margin: 10px auto;
+}
+.menu-item-tile .menu-item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-top:-20px;    
+}
+.menu-item-tile .menu-item-price span{
+    font-size: .7em;
+}
+.menu-item-photo{
+    padding: 0  ;
+    position: relative;
+    max-width: 250px;
+    overflow: hidden;
+    border:2px solid #3f0c1f;
+    margin-right: -15px;
+    margin-left:auto ;
+    margin-bottom:20px ;
+}
+.menu-item-description{
+    padding-right: 30px;
+}
+.menu-item-title{
+    text-transform: capitalize;
+    color:white;
+    margin:0 0 10px;
+}
+.menu-item-details{
+    font-size: 1em;
+}
+@media (max-width:768px){
+    .menu-item-description, .menu-item-details, .menu-item-photo, .menu-item-tile .menu-item-price{
+        text-align: center;
+        
+    }
+    .menu-item-photo{
+        margin: 0 auto;
+    }
+    .menu-item-tile .menu-item-price{
+        margin-top: 0;
+    }
 }
