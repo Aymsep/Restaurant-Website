@@ -1,15 +1,18 @@
+/*all content font style is italic*/
 *{
     font-style: italic;
 }
 body{
     background-color: rgb(113, 34, 34);
 }
+/*header id style*/
 #header-nav{
     background-color:yellow;
     border-radius: 0;
     border: 0;
     height: auto;
 }
+/*logo image style*/
 #logo-img{
     background:url('image/log.png') no-repeat;
     background-position: center;
@@ -18,19 +21,23 @@ body{
     border-radius: 100px;
     margin: 10px 15px;
 }
+/*navbar brand name*/
 .navbar-brand{
     padding-top:30px;
 }
-.navbar-brand a:hover, .navbar-brand a{
+/*navbar brand name remove underline style*/
+.navbar-brand a{
     text-decoration: none;
 }
+/* "fast food" header style*/
 .navbar-brand h1{
     text-transform: capitalize;
     color: #8d3d5b;
     font-weight: bold;
     font-size: 28px;
     text-shadow: #8d3d5b 1px 0px 10px;
-}
+} 
+/*"get some food" paragraph style*/
 .navbar-brand p{
     color: rgb(32, 32, 32);
     font-size: 20px;
@@ -38,6 +45,7 @@ body{
     font-weight: bold;
     text-shadow: black 1px 0px 10px;
 }
+/*unordred list style*/
 #nav-list {
     margin-top: 10px;
 }
@@ -104,30 +112,6 @@ span.bi.bi-telephone-forward{
     color: white;
     font-size:20px;
 }
-@media (min-width: 1200px){
-    .jumbotron{
-        margin-top:25px;
-        background: url('image/1200.png') no-repeat;
-        background-size:cover;
-        background-position: center;
-        height: 600px;
-        border:2px solid #3f0c1f;
-        margin-bottom:30px;
-        box-shadow: 0 0 50px #3f0c1f;
-    }
-}
-@media (min-width: 992px) and (max-width:1198px){
-.jumbotron{
-    margin-top:25px;
-    background: url('image/768.png') no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 500px;
-    border:2px solid #3f0c1f;
-    margin-bottom:30px;
-    box-shadow: 0 0 50px #3f0c1f;
-}
-}
 .img{
         margin-top:15px;
         border:2px solid #3f0c1f;
@@ -168,12 +152,6 @@ span.bi.bi-telephone-forward{
     opacity: .8;
     text-align: center;
     border-radius: 8px 8px 0 0;
-}
-@media (max-width: 575px){
-    #menu-tiles, #specials-tiles, #map-tiles{
-        width: 320px;
-        margin: 20px auto 15px;
-    }
 }
 .panel-footer{
     margin-top: 25px;
@@ -284,6 +262,8 @@ hr{
 .menu-item-details{
     font-size: 1em;
 }
+/* media queries for responsive display over multiple devices*/
+/*for devices smaller than 768px*/
 @media (max-width:768px){
     .menu-item-description, .menu-item-details, .menu-item-photo, .menu-item-tile .menu-item-price{
         text-align: center;
@@ -296,3 +276,36 @@ hr{
         margin-top: 0;
     }
 }
+/*for devices smaller than 575px*/
+@media (max-width: 575px){
+    #menu-tiles, #specials-tiles, #map-tiles{
+        width: 320px;
+        margin: 20px auto 15px;
+    }
+}
+/*for device smaller than 1198px and larger than 992px*/
+@media (min-width: 992px) and (max-width:1198px){
+    .jumbotron{
+        margin-top:25px;
+        background: url('image/768.png') no-repeat;
+        background-size:cover;
+        background-position: center;
+        height: 500px;
+        border:2px solid #3f0c1f;
+        margin-bottom:30px;
+        box-shadow: 0 0 50px #3f0c1f;
+    }
+    }
+/* for device larger than 1200px*/
+    @media (min-width: 1200px){
+        .jumbotron{
+            margin-top:25px;
+            background: url('image/1200.png') no-repeat;
+            background-size:cover;
+            background-position: center;
+            height: 600px;
+            border:2px solid #3f0c1f;
+            margin-bottom:30px;
+            box-shadow: 0 0 50px #3f0c1f;
+        }
+    }
