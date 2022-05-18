@@ -113,7 +113,7 @@ span.bi.bi-telephone-forward{
     font-size:20px;
 }
 .img{
-        margin-top:15px;
+        
         border:2px solid #3f0c1f;
         box-shadow: 0 0 50px #3f0c1f;
 }
@@ -250,6 +250,8 @@ hr{
     margin-right: -15px;
     margin-left:auto ;
     margin-bottom:20px ;
+    background-position: center;
+    background-size: cover;
 }
 .menu-item-description{
     padding-right: 30px;
