@@ -4,11 +4,11 @@ const context = {
   arr: [
    {
      names: 'Menu',
-     image: './image/menu.png'
+     image: 'menu.png'
     },
     {
       names: 'Specials',
-      image: './image/spec.png',
+      image: 'spec.png',
     },
 
     {
@@ -20,3 +20,4 @@ const context = {
 const compiledHtml = template(context)
 const fill = document.getElementById('home-tiles');
 fill.innerHTML = compiledHtml ; 
+// second dynamic element
